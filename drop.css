@@ -6,7 +6,7 @@
 
 .expand-container{
     position:absolute;
-    right: 10%;
+    right: 0%;
     top: -50px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .containr{
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -69,4 +69,33 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+.act{        
+    background-color:#2280be;
+    color: white;
+}
+
+#para{
+    line-height: 1.5;
+}
+
+.tri{
+    position: absolute;
+    top: -39px;
+    left: 50px;
+}
+
+.result{
+    position: relative;
+}
+
+/* borders */
+
+.bb{
+    border: 2px solid;
+}
+
+.br{
+    border: 2px solid red;
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="drop.css">
-
+    <script src="https://kit.fontawesome.com/4749b59cc2.js" crossorigin="anonymous"></script>
 </head>
 <body >
     <div class="main-container w-full h-auto">
@@ -84,7 +84,7 @@
             </div>
         </div>
         <div id="dropdown">
-            <h1 class="text-xl pl-3 pt-7 font-bold">Dropdown</h1>
+            <h1 class="text-xl pl-[10%] pt-7 font-bold">Dropdown</h1>
             <div class="main mb-16">
                 <div class="expand-container">
                     <button onclick="openAll()" id="expand">EXPAND ALL</button>
@@ -153,17 +153,74 @@
                 </div>
             </div>
         </div>
-        <h1 class="text-lg pl-3 sm:text-xl font-bold ">Contact Us</h1>
-        <div id="contact" class=" container mx-auto p-2 w-full">
-            <form action="" class="flex flex-col justify-evenly w-full gap-3 sm:w-full items-center">
-                <input type="text" placeholder="Name" class="border-2 border-black pl-2 py-2 rounded-[10px] w-3/4 sm:w-3/5">
-                <input type="email" placeholder="Email" class="border-2 border-black pl-2 py-2 rounded-[10px] w-3/4 sm:w-3/5">
-                <input type="number" placeholder="Mobile Number" class="border-2 border-black pl-2 py-2 rounded-[10px] w-3/4 sm:w-3/5">
-                <textarea name="Comment" placeholder="comment" id="" class="border-2 border-black pl-2 py-2 rounded-[10px] w-3/4 sm:w-3/5"></textarea>
-                <button class="bg-black text-white p-2 my-2 rounded w-3/4 sm:w-3/5">Send</button>
-            </form>
+        <!-- tab task -->
+        <div class="border w-full bg-[#f2f2f0]">
+            <div class="w-full md:container mx-auto lg:grid lg:grid-cols-2 xl:w-4/5 pt-20">
+                <div class="">
+                    <p class="text-blue-500 font-semibold p-3 pb-0 md:text-sm xl:text-xl"><i class="fa fa-minus" aria-hidden="true"></i> Why Choose Us</p>
+                    <h1 class="p-3 font-bold text-xl md:text-2xl xl:text-3xl">Why do Businesses Choose us for Drupal Agency?</h1>
+                </div>
+                <div class="">
+                    <p id="para" class="p-3 text-justify text-xs text-gray-600 md:text-sm xl:text-[16px]">Selecting a Drupal development agency is a citical task that should be carmed out with care. Our Drupal developers have extensive experience in creating custom Drupal solutions for customers in varnom industry vertical markets</p>
+                </div>
+            </div>
+            <div class="flex justify-between items-center gap-5 mt-20 xl:w-4/5 mx-auto">
+                <!-- tab - 1 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-[#2280be] text-white" id="tab1">
+                    <span class="text-white" id="spn1">
+                        <i class="fa-regular fa-file fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">Drupal Experts</p>
+                </div>
+
+                <!-- tab - 2 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-white" id="tab2">
+                    <span class="text-blue-500" id="spn2">
+                        <i class="fa-regular fa-calendar fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">End-to-End solutions</p>
+                </div>
+
+                <!-- tab - 3 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-white" id="tab3">
+                    <span class="text-blue-500" id="spn3">
+                        <i class="fa-regular fa-comment fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">Flexible Hiring Models</p>
+                </div>
+
+                <!-- tab - 4 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-white" id="tab4">
+                    <span class="text-blue-500" id="spn4">
+                        <i class="fa-regular fa-bookmark fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">Compatetive procing</p>
+                </div>
+
+                <!-- tab - 5 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-white" id="tab5">
+                    <span class="text-blue-500" id="spn5">
+                        <i class="fa-regular fa-clock fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">On Going Support</p>
+                </div>
+
+                <!-- tab - 6 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-white" id="tab6">
+                    <span class="text-blue-500" id="spn6">
+                        <i class="fa-regular fa-thumbs-up fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">Drupal Contributors</p>
+                </div>
+            </div>
+            <div class="bg-white mt-14 xl:w-4/5 mx-auto h-auto p-10 pt-14 mb-28 result">
+                <img src="./src/img/triangle.png" alt="" class="tri" id="tri">
+                <p id="head" class="font-bold text-3xl">Drupal Experts</p>
+                <p id="para1" class="py-8">Drupal Developers Studio is a trustworthy and reliable Drupal agency that shapes your brand's digital experience through customized services. We hire the most enthusiastic and well-trained Drupal experts. We are a verified Drupal company and have vast experience in building sites on the Drupal. Moreover, we create great eCommerce and CRM websites using their industry knowledge and creativity. Our Drupal developers have experience building custom websites for startups, small businesses, and leading brands across different industries.</p>
+                <p id="para2" class="">Our Drupal developers can create high-quality, full-scale Drupal websites that adhere to established industry standards. Furthermore, we use the latest Drupal technologies to create fully optimized, SEO-friendly, and responsive websites regardless of the complexity.</p>
+            </div>
         </div>
-                <footer class="bg-black text-white h-auto w-full grid grid-cols-2 grid-row-2" id="footer">
+        <footer class="bg-black text-white h-auto w-full grid grid-cols-2 grid-row-2" id="footer">
             <div class="p-1.5">
                 <p class="mb-2">Address: <span class="text-xs text-justify sm:text-sm md:text-md lg:text-xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, porro.</span></p>
                 <p>Email:<span> xyz@gmail.com</span></p>
