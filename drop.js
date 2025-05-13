@@ -1,3 +1,46 @@
+const q1 = document.getElementById("question1");
+const img1 = document.getElementById("img1");
+
+(q1 || img1).addEventListener("click", () => {
+    drop1();
+});
+
+const q2 = document.getElementById("question2");
+const img2 = document.getElementById("img2");
+
+(q2 || img2).addEventListener("click", () => {
+    drop2();
+});
+
+const q3 = document.getElementById("question3");
+const img3 = document.getElementById("img3");
+
+(q3 || img3).addEventListener("click", () => {
+    drop3();
+});
+
+const q4 = document.getElementById("question4");
+const img4 = document.getElementById("img4");
+
+(q4 || img4).addEventListener("click", () => {
+    drop4();
+});
+
+const q5 = document.getElementById("question5");
+const img5 = document.getElementById("img5");
+
+(q5 || img5).addEventListener("click", () => {
+    drop5();
+});
+
+const q6 = document.getElementById("question6");
+const img6 = document.getElementById("img6");
+
+(q6 || img6).addEventListener("click", () => {
+    drop6();
+});
+
+
 function drop1(){
     const ans = document.getElementById("answer1");
     const question = document.getElementById("question1");
