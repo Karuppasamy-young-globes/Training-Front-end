@@ -80,15 +80,19 @@
     line-height: 1.5;
 }
 
-.tri{
-    position: absolute;
-    top: -39px;
-    left: 50px;
-}
-
-.result{
+.result {
     position: relative;
 }
+
+.result .tri {
+    width: 40px;        
+    height: auto;      
+    position: absolute;
+    top: -30px;         
+    transition: left 0.3s ease;
+}
+
+
 
 /* borders */
 

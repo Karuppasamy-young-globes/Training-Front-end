@@ -167,14 +167,12 @@ const head = document.getElementById("head");
 const para1 = document.getElementById("para1");
 const para2 = document.getElementById("para2");
 const spn1 = document.getElementById("spn1");
-const tri = document.getElementById("tri");
 
 
 tab1.addEventListener("click", () => {
     tab1.style.color = "white";
     tab1.style.backgroundColor = "#2280be";
     spn1.style.color = "white";
-    tri.style.left = "50px";
     head.innerHTML = "Drupal Experts";
     para1.innerText = "Drupal Developers Studio is a trustworthy and reliable Drupal agency that shapes your brand's digital experience through customized services. We hire the most enthusiastic and well-trained Drupal experts. We are a verified Drupal company and have vast experience in building sites on the Drupal. Moreover, we create great eCommerce and CRM websites using their industry knowledge and creativity. Our Drupal developers have experience building custom websites for startups, small businesses, and leading brands across different industries.";
     para2.innerHTML = "Our Drupal developers can create high-quality, full-scale Drupal websites that adhere to established industry standards. Furthermore, we use the latest Drupal technologies to create fully optimized, SEO-friendly, and responsive websites regardless of the complexity.";
@@ -185,7 +183,6 @@ tab2.addEventListener("click", () => {
     tab2.style.color = "white";
     tab2.style.backgroundColor = "#2280be";
     spn2.style.color = "white";
-    tri.style.left = "230px";
     head.innerHTML = "End-to-End Solutions";
     para1.innerText = "At Drupal Developers Studio, we offer a range of Drupal development services that can help businesses meet the changing needs of their clients. We are an award-winning Drupal Development agency that works for excellence in everything we do, and we're confident that we can help you achieve success.";
     para2.innerHTML = "Our team of expert Drupal developers is dedicated to enhancing our clients' digital presence. Drupal is a platform used to create feature-rich, visually appealing websites and provide a cutting-edge user experience. This ensures that the website is highly visible and that customers can respond effectively.";
@@ -196,7 +193,6 @@ tab3.addEventListener("click", () => {
     tab3.style.color = "white";
     tab3.style.backgroundColor = "#2280be";
     spn3.style.color = "white";
-    tri.style.left = "420px";
     head.innerHTML = "Flexible Hiring Models";
     para1.innerHTML = "<h4>Project-Based Hiring Model</h4>";
     para2.innerHTML = "Our Drupal developers can create high-quality, full-scale Drupal websites that adhere to established industry standards. Furthermore, we use the latest Drupal technologies to create fully optimized, SEO-friendly, and responsive websites regardless of the complexity.";
@@ -207,7 +203,6 @@ tab4.addEventListener("click", () => {
     tab4.style.color = "white";
     tab4.style.backgroundColor = "#2280be";
     spn4.style.color = "white";
-    tri.style.left = "600px";
     head.innerHTML = "Competitive Pricing";
     para1.innerText = "Low cost allows businesses to improve their online market presence. Drupal CMS development is very cost-effective because many modules and well-designed themes are accessible for free.";
     para2.innerHTML = "We are well-known for delivering excellent Drupal solutions at a competitive cost than any other Drupal agency. We can help you get an enterprise or a basic Drupal web design at a reasonable price. We focus on the best pricing for our customers, which drives us to be more competitive, innovative, and efficient. Our Drupal development services are quite affordable, and we can create unique Drupal solutions to meet your specific needs and budget.";
@@ -218,7 +213,6 @@ tab5.addEventListener("click", () => {
     tab5.style.color = "white";
     tab5.style.backgroundColor = "#2280be";
     spn5.style.color = "white";
-    tri.style.left = "790px";
     head.innerHTML = "On-Going Support";
     para1.innerText = "We can help you with your Drupal website, regardless of your version. We have experience with design, development, security, and updates, and can help you achieve your business goals without worrying about Drupal support services.";
     para2.innerHTML = "Our flexible Ongoing Support Services are customized to your requirements. Our Drupal developers will always be ready to help you with problems and offer the most satisfactory answers. Contact one of our specialists to learn more about what we can do for you.";
@@ -229,7 +223,6 @@ tab6.addEventListener("click", () => {
     tab6.style.color = "white";
     tab6.style.backgroundColor = "#2280be";
     spn6.style.color = "white";
-    tri.style.left = "980px";
     head.innerHTML = "Drupal Contributors";
     para1.innerText = "Drupal Developers Studio has been a part of the Drupal community for over a decade. We have been supporting the Drupal projects in multiple ways from the beginning.";
     para2.innerHTML = "We've created over 60 Drupal themes and modules, as well as helping other developers troubleshoot any bugs and keep their websites running smoothly. Our team has extensive experience with Drupal and is well-equipped to build complex, scalable websites using its open-source potential.";
@@ -367,3 +360,33 @@ let re6 = () => {
     tab5.style.backgroundColor = "white";
     spn5.style.color = "#2280be";
 }
+
+    const tabs = document.querySelectorAll('.tab-container');
+    const triangle = document.getElementById('tri');
+    const result = document.querySelector('.result');
+
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', function () {
+            
+            tabs.forEach(t => t.classList.remove('bg-[#2280be]', 'text-white'));
+            tabs.forEach(t => {
+                const icon = t.querySelector('i');
+                icon && icon.classList.remove('text-white');
+                icon && icon.classList.add('text-blue-500');
+            });
+
+            this.classList.add('bg-[#2280be]', 'text-white');
+            const icon = this.querySelector('i');
+            icon && icon.classList.add('text-white');
+            icon && icon.classList.remove('text-blue-500');
+
+            const tabRect = this.getBoundingClientRect();
+            const resultRect = result.getBoundingClientRect();
+
+            const tabCenter = tabRect.left + tabRect.width / 2;
+            const offsetLeft = tabCenter - resultRect.left;
+
+            triangle.style.position = 'absolute';
+            triangle.style.left = `${offsetLeft - 10}px`; 
+        });
+    });

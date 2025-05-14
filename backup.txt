@@ -1,0 +1,49 @@
+<div class="flex justify-between items-center gap-5 mt-20 xl:w-4/5 mx-auto"> 
+                <!-- tab - 1 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-[#2280be] text-white" id="tab1">
+                    <span class="text-white" id="spn1">
+                        <i class="fa-regular fa-file fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">Drupal Experts</p>
+                </div>
+
+                <!-- tab - 2 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-white" id="tab2">
+                    <span class="text-blue-500" id="spn2">
+                        <i class="fa-regular fa-calendar fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">End-to-End solutions</p>
+                </div>
+
+                <!-- tab - 3 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-white" id="tab3">
+                    <span class="text-blue-500" id="spn3">
+                        <i class="fa-regular fa-comment fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">Flexible Hiring Models</p>
+                </div>
+
+                <!-- tab - 4 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-white" id="tab4">
+                    <span class="text-blue-500" id="spn4">
+                        <i class="fa-regular fa-bookmark fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">Compatetive procing</p>
+                </div>
+
+                <!-- tab - 5 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-white" id="tab5">
+                    <span class="text-blue-500" id="spn5">
+                        <i class="fa-regular fa-clock fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">On Going Support</p>
+                </div>
+
+                <!-- tab - 6 -->
+                <div class="tab-container text-center p-2 w-36 h-32 flex flex-col justify-evenly bg-white" id="tab6">
+                    <span class="text-blue-500" id="spn6">
+                        <i class="fa-regular fa-thumbs-up fa-3x"></i>
+                    </span>
+                    <p class="font-bold pt-2 text-sm">Drupal Contributors</p>
+                </div>
+            </div>
